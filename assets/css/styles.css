@@ -1,0 +1,343 @@
+    :root{
+      --brand: #C64105; /* Ganti warna utama di sini */
+      --brand-contrast: #ffffff;
+      --muted:#6c757d;
+      --max-width:1200px;   
+      --radius:12px;
+    }   
+
+    html,body{font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
+    .navbar-brand strong{color:var(--brand);}
+    .btn-brand{background:var(--brand); color:var(--brand-contrast);}
+    .hero{background:linear-gradient(0deg, rgba(13,110,253,0.06), rgba(13,110,253,0.06)), url('assets/images/hero.jpg') center/cover no-repeat; padding:6rem 0;}
+    .card-portfolio{border-radius:var(--radius); overflow:hidden; transition:transform .25s ease;}
+    .card-portfolio:hover{transform:translateY(-6px)}
+    .portfolio-img{height:200px; object-fit:cover; width:100%;}
+
+    .section-title{margin-bottom:2rem}
+
+    footer{background:#f8f9fa; padding:2.5rem 0}
+
+    /* Responsive tweaks */
+    @media (max-width:576px){
+      .hero{padding:3.5rem 0}
+      .portfolio-img{height:160px}
+    }
+
+    .btn-outline-orange {
+      color: #C64105 !important;
+      border: 2px solid #C64105 !important;
+      background-color: transparent !important;
+      transition: all 0.3s ease !important;
+    }
+    .btn-outline-orange:hover {
+      background-color: #C64105 !important;
+      color: #fff !important;
+      border-color: #C64105 !important;
+    }
+    .btn-orange {
+      background-color: #C64105 !important;
+      color: #fff !important;
+      border: 2px solid #C64105 !important;
+      transition: all 0.3s ease !important;
+    }
+    .btn-orange:hover {
+      background-color: #e55a00 !important;
+      border-color: #e55a00 !important;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(255, 102, 0, 0.3);
+    }
+
+    #about {
+  background-color: #fff;
+}
+
+#about .portfolio-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  #about .portfolio-img {
+    margin-top: 20px;
+  }
+}
+
+    #services .card {
+      border: none;
+      border-radius: var(--radius);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    #services .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    #services .card-body {
+      text-align: center;
+    }
+
+    #services .card-title {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      color: var(--brand);
+    }
+
+    #services .card-text {
+      color: var(--muted);
+    }
+
+    #contact form .form-control {
+      border-radius: var(--radius);
+      border: 1px solid #ced4da;
+      transition: border-color 0.3s ease;
+    }
+
+    #contact form .form-control:focus {
+      border-color: var(--brand);
+      box-shadow: 0 0 5px rgba(198, 65, 5, 0.5);
+    }
+
+    #contact form button {
+      border-radius: var(--radius);
+    }
+
+    /* ====== Section Tentang Marta Studio ====== */
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;         /* agak tebal tapi masih elegan */
+  font-size: 32px;          /* ubah ukuran sesuai selera */
+  color: #222;              /* warna teks judul */
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #555;              /* abu-abu lembut biar mudah dibaca */
+  line-height: 1.8;
+}
+
+.about-text ul li {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.hero-text {
+  max-width: 520px;
+  line-height: 1.6;
+}
+
+.hero-text h1 {
+  margin-bottom: 1rem; /* beri jarak antar heading dan paragraf */
+}
+
+.hero-text p {
+  margin-bottom: 1.5rem; /* beri ruang sebelum tombol */
+}
+
+.btn {
+  margin-top: 0.5rem;
+}
+
+.brand-text {
+  color: #C64105; /* ganti dengan warna brand kamu */
+}
+
+.service-img {
+  width: 100%;
+  height: 220px; /* tinggi ideal */
+  object-fit: cover; /* biar gambar nggak gepeng */
+  border-radius: 10px; /* sudut halus biar serasi */
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .service-img {
+    height: 180px; /* tinggi sedikit lebih kecil di HP */
+  }
+}
+
+/* === FONT KHUSUS UNTUK BAGIAN TENTANG MARTA STUDIO === */
+#about {
+  font-family: 'Poppins', sans-serif;
+}
+
+#about .section-title {
+  font-weight: 600; /* sedikit lebih tebal untuk judul */
+  letter-spacing: 0.5px;
+}
+
+#about p,
+#about li {
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+#about .brand-text {
+  font-weight: 600;
+  color: var(--brand); /* opsional, biar nama "Marta Studio" menonjol */
+}
+
+/* === FONT KHUSUS UNTUK BAGIAN LAYANAN KAMI === */
+#services {
+  font-family: 'Poppins', Poppins;
+}
+
+/* Judul section */
+#services .section-title {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Judul card */
+#services .card-title {
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+/* Isi teks card */
+#services .card-text {
+  font-weight: 400;
+  line-height: 1.6;
+  color: #6c757d; /* tetap halus dan enak dibaca */
+}
+
+/* Opsional: biar teks dalam card lebih rapi */
+#services .card {
+  border-radius: var(--radius);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+#services .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+/* Portfolio Section */
+.portfolio-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Background image full width */
+.portfolio-hero {
+  background-image: url('assets/images/portofolio-card.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 90vh; /* tinggi banner di desktop */
+}
+
+/* Responsiveness */
+@media (max-width: 992px) {
+  .portfolio-hero {
+    height: 70vh;
+    background-position: top center;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio-hero {
+    height: 55vh;
+    background-position: center top;
+  }
+}
+
+/* Card styling */
+.card-img-top {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+  transform: scale(1.03);
+}
+
+.card-body {
+  padding: 1rem;
+  text-align: center;
+}
+
+/* ==== PORTFOLIO HERO ==== */
+.portfolio-hero {
+  background: none; /* karena kamu pakai <img> langsung */
+  padding: 0;
+  margin-bottom: 0;
+}
+
+/* Pastikan gambar full lebar dan tanpa jarak bawah */
+.portfolio-hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 0;
+}
+
+/* Hilangkan aturan lama yang memberi height tetap */
+@media (max-width: 576px) {
+  .portfolio-hero {
+    height: auto !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .portfolio-hero {
+    height: auto !important;
+  }
+}
+
+/* --- Portfolio Minimalis --- */
+#portfolio {
+  font-family: 'Poppins', sans-serif;
+}
+
+#portfolio .section-title {
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  color: #0d6efd;
+}
+
+.portfolio-card {
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.portfolio-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #212529;
+}
+
+.portfolio-desc {
+  font-weight: 400;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #6c757d;
+}
+
+/* ===== Tombol WhatsApp ===== */
+.btn-whatsapp {
+  background-color: #25D366; /* hijau khas WhatsApp */
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebc59; /* sedikit lebih gelap saat hover */
+  color: #fff;
+}
